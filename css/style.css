@@ -20,10 +20,15 @@
     width: 140px;
     height: 130px;
 }
-.navbar-nav{
-    --bs-nav-link-color: black;
-    --bs-nav-link-hover-color: blue;
-    font-weight: bold; 
+.navbar-collapse{
+    flex-direction: row-reverse;
+}
+.nav-link{
+    color: black;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: blue;
 }
 .navbar-toggler:focus{
     box-shadow: none;
@@ -68,10 +73,17 @@
     background-image: url("../recursos/fondo\ mar\ estrella.avif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 300px;
+    height: 515px;
     background-attachment: fixed;
     margin: 30px 0;
     color: white;
+    display: flex;
+    justify-content: center;
+}
+.banner-clases p{
+    width: 900px;
+    text-align: center;
+    padding: 30px;
 }
 .parrafo-banner{
     font-size: 25px;
@@ -252,6 +264,9 @@ textarea{
         width: 200px;
     }
     /* CLASES MQ */
+    .banner-clases{
+        height: 300px;
+    }
     .section-clases{
         display: flex;
     }
